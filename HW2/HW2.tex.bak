@@ -1,0 +1,114 @@
+\documentclass[letterpaper, 11pt]{article}
+%!TEX TS-program = pdflatex
+%Completely insane addition to force textmate to use pdflatex
+
+\special{papersize=8.5in,11in}
+\setlength{\pdfpageheight}{\paperheight}
+\setlength{\pdfpagewidth}{\paperwidth}
+\setlength{\parindent}{0in}
+\setlength{\parskip}{0.06in}
+
+\marginparwidth 0pt
+\oddsidemargin  0pt
+\evensidemargin  0pt
+\marginparsep 0pt
+
+\topmargin   0pt
+
+\textwidth   6.5in
+\textheight  8.5 in
+\usepackage{amssymb, amsmath, graphicx}
+\usepackage{epstopdf}
+\usepackage{subfigure}
+\usepackage{cleveref}
+\usepackage{subfigure}
+\usepackage{booktabs}
+\usepackage{listings}
+%\usepackage{algorithm}
+%\usepackage[noend]{algorithmic}
+%\usepackage{ifthen}
+%\usepackage{xspace}
+
+%\usepackage{fullpage}
+\DeclareMathOperator*{\argmin}{arg\,min}
+\newcommand{\lz}[0]{Lov\'{a}sz }
+\newcommand{\lecture}[5]{
+   \renewcommand{\thepage}{\arabic{page}}
+   \noindent
+   \begin{center}
+   \framebox{
+      \vbox{
+    \hbox to 5.78in { {\bf EE381V: Advanced Coding Theory} \hfill #2 }
+       \vspace{4mm}
+       \hbox to 5.78in { {\Large \hfill #5  \hfill} }
+       \vspace{2mm}
+       \hbox to 5.78in { {\it Lecturer: #3 \hfill Scribe: #4} }
+      }
+   }
+   \end{center}
+   \vspace*{4mm}
+}
+
+\newcommand{\homework}[5]{
+   \renewcommand{\thepage}{\arabic{page}}
+   \noindent
+   \begin{center}
+   \framebox{
+      \vbox{
+    \hbox to 5.78in { {\bf EE381V: Machine Learning, Homework #1} \hfill #2 }
+       \vspace{4mm}
+
+            \hbox to 5.78in { {\it \hfill #3} }
+
+      }
+   }
+   \end{center}
+   \vspace*{4mm}
+}
+
+\newenvironment{problem}{\begin{prob}
+                         \rm}{\end{prob}}
+\newcommand{\makeline}{\noindent \rule{\textwidth}{0.05in} \newline}
+\newcommand{\maketline}{\noindent \rule{\textwidth}{0.025in} \newline}
+
+\newtheorem{theorem}{Theorem}
+\newtheorem{definition}[theorem]{Definition}
+\newtheorem{remark}[theorem]{Remark}
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{corollary}[theorem]{Corollary}
+\newtheorem{proposition}[theorem]{Proposition}
+\newtheorem{claim}[theorem]{Claim}
+\newtheorem{observation}[theorem]{Observation}
+\newtheorem{fact}[theorem]{Fact}
+\newtheorem{assumption}[theorem]{Assumption}
+\newtheorem{prob}{Q.}
+
+\def\QED{{\phantom{x}} \hfill $\rule{1.3ex}{1.3ex}$}
+
+\def\proof{\rm \trivlist \item[\hskip \labelsep{\bf Proof. }]}
+\def\endproof{\QED \endtrivlist}
+
+
+\newcommand{\OPT}{\ensuremath{\mathrm{OPT}}\xspace}
+\def\OR{orthonormal representation }
+
+\begin{document}
+
+%%%%%%%%%%%%%%%%%%%%%
+% Create  header.
+\homework
+{2}					% Lecture number
+{\today}		% Date of lecture
+{Jiaxiao Zheng}		% Name of scriber
+\section{Computational Problems}
+
+\section{Written Problems}
+\begin{problem}
+\begin{enumerate}
+\item In fig. 3.10, $f(p) = 1-(1-p^4)^4$. Then $f^\prime(p) = 16(1-p^4)^3p^3$
+\end{enumerate}
+\end{problem}
+
+
+
+\end{document}
