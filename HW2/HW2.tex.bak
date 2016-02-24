@@ -105,10 +105,16 @@
 \section{Written Problems}
 \begin{problem}
 \begin{enumerate}
-\item In fig. 3.10, $f(p) = 1-(1-p^4)^4$. Then $f^\prime(p) = 16(1-p^4)^3p^3$
+\item In fig. 3.10, $f(p) = 1-(1-p^4)^4$. Then $f^\prime(p) = 16(1-p^4)^3p^3$.
+Set $g(p) = \log(f^\prime(p)) = \log 16 +3\log(1-p^4) +3\log p$. Then maximizing $g(p)$ we can get $p = 0.2^{\frac14} = 0.6687$
+
+In fig. 3.11, $f(p) = (1-(1-p)^4)^4$. Then $f^\prime(p) = 16(1-(1-p)^4)^3(1-p)^3$.
+Similarly, set $g(p) = \log(f^\prime(p)) = \log 16 +3\log(1-(1-p)^4) + 3\log(1-p)$. Maximizing $g(p)$ we have $p = 0.3313$.
+
+\item In a more general settings
 \end{enumerate}
 \end{problem}
 
 
 
-\end{document}
+\end{document} 
