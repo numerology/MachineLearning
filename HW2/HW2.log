@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-1.40.11 (MiKTeX 2.9) (preloaded format=pdflatex 2014.11.5)  24 FEB 2016 16:27
+This is pdfTeX, Version 3.1415926-1.40.11 (MiKTeX 2.9) (preloaded format=pdflatex 2014.11.5)  24 FEB 2016 19:34
 entering extended mode
 **C:/Work/MachineLearning/hw2/HW2.tex
 (C:/Work/MachineLearning/hw2/HW2.tex
@@ -280,7 +280,7 @@ Here is how much of TeX's memory you used:
  8185 multiletter control sequences out of 15000+200000
  10192 words of font info for 39 fonts, out of 3000000 for 9000
  14 hyphenation exceptions out of 8191
- 41i,7n,32p,360b,274s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 41i,7n,32p,378b,274s stack positions out of 5000i,500n,10000p,200000b,50000s
 <C:/CTEX/MiKTeX/fonts/t
 ype1/public/amsfonts/cm/cmbx10.pfb><C:/CTEX/MiKTeX/fonts/type1/public/amsfonts/
 cm/cmbx12.pfb><C:/CTEX/MiKTeX/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/CTE
@@ -292,7 +292,7 @@ fonts/cm/cmr8.pfb><C:/CTEX/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:
 /CTEX/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy6.pfb><C:/CTEX/MiKTeX/fonts/typ
 e1/public/amsfonts/cm/cmsy8.pfb><C:/CTEX/MiKTeX/fonts/type1/public/amsfonts/cm/
 cmti10.pfb><C:/CTEX/MiKTeX/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on HW2.pdf (2 pages, 142712 bytes).
+Output written on HW2.pdf (2 pages, 144562 bytes).
 PDF statistics:
  65 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)

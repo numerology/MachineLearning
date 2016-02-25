@@ -106,15 +106,54 @@
 \begin{problem}
 \begin{enumerate}
 \item In fig. 3.10, $f(p) = 1-(1-p^4)^4$. Then $f^\prime(p) = 16(1-p^4)^3p^3$.
-Set $g(p) = \log(f^\prime(p)) = \log 16 +3\log(1-p^4) +3\log p$. Then maximizing $g(p)$ we can get $p = 0.2^{\frac14} = 0.6687$
+Set $g(p) = \log(f^\prime(p)) = \log 16 +3\log(1-p^4) +3\log p$. Then maximizing $g(p)$ we can get $p = 0.2^{\frac14} = 0.6687$. The maximal $f^\prime(p) = 2.45$.
 
 In fig. 3.11, $f(p) = (1-(1-p)^4)^4$. Then $f^\prime(p) = 16(1-(1-p)^4)^3(1-p)^3$.
-Similarly, set $g(p) = \log(f^\prime(p)) = \log 16 +3\log(1-(1-p)^4) + 3\log(1-p)$. Maximizing $g(p)$ we have $p = 0.3313$.
+Similarly, set $g(p) = \log(f^\prime(p)) = \log 16 +3\log(1-(1-p)^4) + 3\log(1-p)$. Maximizing $g(p)$ we have $p = 0.3313$. The maximal is again $f^\prime(p) = 2.45$.
 
-\item In a more general settings
+\item In a more general settings, if we first apply $r$-way AND construction and then $b$-way OR: $f(p) = 1-(1-p^r)^b$.
+Then similarly $\log(f^\prime(p)) = \log br + (b-1)\log(1-p^r) + (r-1)\log p$, with maximizer at $p = (\frac{r-1}{r(b-1) + r - 1})^{\frac{1}{r}}$, and maximal slope $f^\prime(p) = br(1-\frac{r-1}{rb-1})^{b-1}(\frac{r-1}{rb-1})^{\frac{r-1}{r}}$
+
+If we first apply $b$-way OR and then $r$-way AND: $f(p) = (1-(1-p)^b)^r$. $g(p) = \log(f^\prime(p)) = \log br + (r-1)\log(1-(1-p)^b) + (b-1)\log(1-p)$. Maximizer is $p = 1-(\frac{b-1}{b(r-1) + (b-1)})^{\frac1b}$, and maximal slope $f^\prime(p) = br(1-\frac{b-1}{br-1})^{r-1}(\frac{b-1}{br - 1})^{\frac{b-1}{b}}$
+
+
 \end{enumerate}
 \end{problem}
 
+\begin{problem}
+If $P$ is $k$-dimensional, $\Lambda = \textrm{diag}([\textrm{$k$ 1's}, 0,0,\dots,0])$.
 
+Since $UPU^T = \Lambda$, $P = U^T\Lambda U$, then $U^T\Lambda ^2 U v = U^T\Lambda Uv$. If that holds true the only possibility is that the diagonal of $\Lambda$ contains only 0 and 1. Given the dimensionality of $P$ and $\Lambda$ are both $k$, it is easy to see we have $k$ 1's on the diagonal and other elements are 0.
+\end{problem}
 
+\begin{problem}
+\begin{enumerate}
+\item If $x\in span\{v_1\}$, $x = \beta v_1$ where $\beta \in \mathbb{R}$. Then the original optimization changes to:
+$$
+\min_\beta (a-\beta v_1)^T(a-\beta v_1)
+$$
+equivalent to
+$$
+\min_\beta f(\beta) =  -2\beta a^Tv_1 + \beta^2 v_1^Tv_1
+$$
+It is easy to see the optimizer is $\beta^* = \frac{a^Tv_1}{v_1^Tv_1} = a^Tv_1$ because $v_1$ is normalized. Then the optimizer of the original problem is $x = <a,v_1>v_1^T$
+
+\item The original optimization problem can be written as:
+\begin{eqnarray*}
+\min_v && \|A-Avv^T\|^2_F \\
+&& = \sum_{i=1}^n\|a_i - a_ivv^T\|^2_2 \\
+&& = \sum_{i=1}^n(a_i - a_ivv^T)(a_i-a_ivv^T)^T \\
+&& = \sum_{i=1}^n(a_ia_i^T + a_ivv^Tvv^Ta_i^T - 2a_ivv^Ta_i^T)
+\end{eqnarray*}
+where the first and second terms are irrelevant to $v$ as long as $v$ is normalized. Therefore it is equivalent to 
+\begin{eqnarray*}
+\max && \sum_{i = 1}^n a_ivv^Ta_i^T \\
+&& = \sum_{i = 1}^n v^Ta_i^Ta_iv \\
+&& = v^TA^TAv
+\end{eqnarray*}
+\end{enumerate}
+\end{problem}
+\begin{problem}
+If $U$ is a rank-$k$ basis then $UI_r$ is a rank-$r$ basis where $I_r = \textrm{diag}[\textrm{$r$ 1's}, 0,\dots,0]$. 
+\end{problem}
 \end{document} 
